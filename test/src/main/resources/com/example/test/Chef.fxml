@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.Cheff">
+   <children>
+      <TableView fx:id="tableView" layoutX="38.0" layoutY="14.0" onMouseClicked="#tableViewMouseClicked" prefHeight="200.0" prefWidth="525.0">
+         <columns>
+            <TableColumn fx:id="type" prefWidth="112.0" text="Pizza Type" />
+            <TableColumn fx:id="toopings" minWidth="5.0" prefWidth="152.0" text="Toppings" />
+            <TableColumn fx:id="pickupTime" prefWidth="137.0" text="Pickup Time" />
+            <TableColumn fx:id="status" prefWidth="123.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="218.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnMainMenuAction" prefHeight="41.0" prefWidth="165.0" text="Home Screen">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnReadyAction" prefHeight="41.0" prefWidth="165.0" text="Ready">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnStartPreparingAction" prefHeight="41.0" prefWidth="165.0" text="Start Preparing">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

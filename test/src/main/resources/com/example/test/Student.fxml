@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.StudentController">
+   <children>
+      <Label layoutX="59.0" layoutY="38.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="101.0" text="Toppings:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="160.0" text="Time:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbType" layoutX="106.0" layoutY="38.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Type" />
+      <ComboBox fx:id="cbPickupTime" layoutX="108.0" layoutY="160.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Pickup Time" />
+      <Button layoutX="333.0" layoutY="101.0" mnemonicParsing="false" onAction="#btnStudentAction" prefHeight="37.0" prefWidth="200.0" text="Order Pizza">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="233.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnHistoryAction" prefHeight="37.0" prefWidth="200.0" text="History">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="233.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnMainMenuAction" prefHeight="37.0" prefWidth="200.0" text="Home Screen">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="chkMushroom" layoutX="106.0" layoutY="91.0" mnemonicParsing="false" text="Mushroom" />
+      <CheckBox fx:id="chkOnion" layoutX="197.0" layoutY="91.0" mnemonicParsing="false" text="Onion" />
+      <CheckBox fx:id="chkOlives" layoutX="106.0" layoutY="119.0" mnemonicParsing="false" text="Olives" />
+      <CheckBox fx:id="chkExtraCheese" layoutX="197.0" layoutY="119.0" mnemonicParsing="false" text="Extra Cheese" />
+   </children>
+</AnchorPane>
