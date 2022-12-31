@@ -1,2 +1,2 @@
 # Cs360-project
-Pizza application
+Sun-Devil Pizza Application
